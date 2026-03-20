@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f0f4ff;
+    padding-top: 60px;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+#home {
+    background: #f8f9ff;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+    padding: 2.5rem;
+    text-align: left;
+}
+
+
+#home img {
+    width: 460px;
+    height: 460px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #888;
+    margin-right: 1.5rem;
+}
+
+#home div {
+    max-width: 660px;
+}
+
+#home h1 {
+    font-size: 2.4rem;
+    margin: 0 0 0.8rem;
+    color: #141a34;
+}
+
+#home p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1.2rem;
+}
+
+#home .home-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+#home a {
+    display: inline-block;
+    color: #0a3a8e;
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid #8aa0d9;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    font-weight: 500;
+}
+
+#home a:hover {
+    background: #e7ebff;
+}
+
+#skills {
+    background: black;
+    color: white;
+}
+
+#about {
+    background: black;
+    color: white;
+}
+
+
+#contact {
+    background: black;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        margin: 0.25rem 0;
+    }
+    
+    section {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+
+    #home {
+        padding: 1.5rem 1rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #home img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        width: 160px;
+        height: 160px;
+    }
+
+    #home div {
+        max-width: 100%;
+    }
+
+    .home-buttons {
+        justify-content: center;
+    }
+}
